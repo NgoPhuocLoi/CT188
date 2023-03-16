@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng nhập</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" id="logo">
+        <img src="./images/logo.png" alt="logo" />
+      </a>
+
+      <nav class="header-nav">
+        <div>
+          <a href="./trangchu.html">Trang chủ</a>
+          <a href="./gioithieu.html">Giới thiệu</a>
+          <a href="./sanpham.html">Sản phẩm</a>
+          <a href="./tintuc.html">Tin tức</a>
+          <a href="./dangnhap.html">Đăng nhập</a>
+          <a href="./dangky.html">Đăng ký</a>
+          <a href="./lienhe.html">Liên hệ</a>
+        </div>
+
+        <div class="header-search">
+          <form class="header-form" method="GET" action="timkiem.html">
+            <input type="text" name="words" class="header-input" placeholder="Nội dung cần tìm..." />
+            <button class="header-search-btn1">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <button class="header-search-btn2">
+            <i class="fa fa-shopping-cart"></i>
+          </button>
+        </div>
+      </nav>
+
+      <img src="./images/header-img1.png" class="header-img1" alt="" />
+      <img src="./images/header-img2.png" class="header-img2" alt="" />
+      <img src="./images/header-img3.png" class="header-img3" alt="" />
+    </header>
+
+    <main class="one">
+      <h1 class="heading-1">ĐĂNG NHẬP</h1>
+      <form
+        class="form login-form"
+        action=""
+        method="post"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <table>
+          <tr>
+            <td colspan="2">
+              <img
+                src="./images//dangnhap/userlogin.png"
+                width="150px"
+                alt="user-img"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th class="form-title">
+              <i class="fa fa-envelope icon-white"></i>
+            </th>
+            <td>
+              <input
+                required
+                id="email-input"
+                type="email"
+                name="email"
+                placeholder="Vui lòng nhập email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th class="form-title"><i class="fa fa-key icon-white"></i></th>
+            <td>
+              <input
+                required
+                id="psw-input"
+                type="password"
+                name="psw"
+                placeholder="Vui lòng nhập mật khẩu"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[#?!@$%^&*-]).{8,}"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2" class="text">
+              Bạn quên
+              <a href="">Mật khẩu?</a>
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember"><b>Ghi nhớ cho lần đăng nhập sau</b></label>
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" value="Đăng nhập" />
+              <input type="reset" value="Hủy" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </main>
+
+    <footer id="footer">
+      &copy; 2021 Bản quyền thuộc về FreeezeVN.
+      <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-pinterest"></i></a>
+      <a href="#logo" class="footer-go-to-top">
+        <img src="./images/top.png" alt="" />
+      </a>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
